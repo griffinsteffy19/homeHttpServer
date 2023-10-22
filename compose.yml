@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  http_service:
+    image: http_service:0.0.1
+    container_name: http_service
+    build: .
+    ports:
+      - "8000:8000"
