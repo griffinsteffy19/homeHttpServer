@@ -7,3 +7,7 @@ services:
     build: .
     ports:
       - "8000:8000"
+    environment:
+      - DEBUG=0
+      - ENVIRONMRNT=$django_ENVIRONMENT
+      - SECRET_KEY=$django_SECRET_KEY
